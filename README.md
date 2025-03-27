@@ -26,10 +26,12 @@ ex. ap-south-1, us-east-1, us-east-2 <br>
 <hr>
 
 **AWS IAM (Identity and Access Management) :** <br>
-AWS IAM (Identity and Access Management) is a service that helps you securely control access to AWS resources. It allows you to manage who can access AWS (authentication) and what actions they can perform (authorization).
+AWS IAM (Identity and Access Management) is a service that helps you securely control access to AWS resources. It allows you to manage who can access AWS (authentication) and what actions they can perform (authorization). <br>
+
+IAM is a global service, meaning that it is not tied to a specific AWS region. <br>
 
 **IAM Resources & Components :** <br>
-*1. IAM Users* - Represents individual people or applications that need access to AWS.
+*1. IAM Users* - Represents individual people or applications that need access to AWS. <br>
 Each user has credentials (passwords, access keys). <br>
 
 *2. IAM Groups* - A collection of IAM users that share the same permissions. <br>
@@ -42,6 +44,12 @@ Used by EC2 instances, Lambda functions, or cross-account access.
 **Two types:** <br>
 *AWS Managed Policies* – Predefined by AWS (e.g., AmazonS3FullAccess). <br>
 *Customer Managed Policies* – Custom policies created by users. <br>
+
+<hr>
+
+**Amazon S3 (Simple Storage Service) :** <br>
+**What is Amazon S3?** <br>
+Amazon S3 (Simple Storage Service) is an object storage service that allows you to store and retrieve any amount of data from anywhere on the internet. It is highly scalable, durable, and secure, making it ideal for backups, static website hosting, data lakes, and more.
 
 
 
