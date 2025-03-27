@@ -9,6 +9,8 @@ The Cloud (or Cloud Computing) refers to the delivery of computing services over
 *3.Hybrid Cloud* – A mix of public and private cloud services. <br>
 
 **Cloud Computing Service Models** <br>
+IaaS (Infrastructure as a Service) - Provides virtual servers, storage, and networking <br>
+                                     ex. AWS EC2, Google Compute Engine <br>
 
 *Region:* In AWS (Amazon Web Services), a Region is a geographical area where AWS has multiple data centers (called Availability Zones) that host cloud resources and services. <br>
 ex. ap-south-1, us-east-1, us-east-2 <br>
