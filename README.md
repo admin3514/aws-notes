@@ -74,12 +74,12 @@ Amazon S3 (Simple Storage Service) is an object storage service that allows you 
    Key (the unique name of the object in the bucket) <br>
 
 *3. S3 Storage Classes* - AWS S3 provides different storage classes to optimize cost vs. access frequency. <br>
-   i. S3 Standard -	Frequently accessed data <br>
-   ii. S3 Intelligent-Tiering -	Automatically moves objects to cheaper storage tiers based on usage <br>
-   iii. S3 Standard-IA (Infrequent Access) - Data that is accessed less often but needs fast retrieval <br>
-   iv. S3 One Zone-IA	- Lower-cost infrequent access storage in a single AZ <br>
-   v. S3 Glacier - Long-term cold storage (retrieval takes minutes to hours) <br>
-   vi. S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
+    1️⃣ S3 Standard -	Frequently accessed data <br>
+    2️⃣ S3 Intelligent-Tiering -	Automatically moves objects to cheaper storage tiers based on usage <br>
+    3️⃣ S3 Standard-IA (Infrequent Access) - Data that is accessed less often but needs fast retrieval <br>
+    4️⃣ S3 One Zone-IA	- Lower-cost infrequent access storage in a single AZ <br>
+    5️⃣ S3 Glacier - Long-term cold storage (retrieval takes minutes to hours) <br>
+    6️⃣ S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
 
    <hr>
 
@@ -99,22 +99,24 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
     Instances have CPU, RAM, storage, and networking. <br>
     We can choose an AMI (Amazon Machine Image) to preinstall software. <br>
 
+
 *2. Instance Types* : <br>
-    i. General Purpose - General purpose instances provide a balance of compute, memory and networking resources, and can be used for a variety of diverse workloads.	<br>
+   1️⃣ General Purpose - General purpose instances provide a balance of compute, memory and networking resources, and can be used for a variety of diverse workloads.	<br>
                          ex. t3.micro, m5.large <br>
 
-   ii. Compute Optimized - High performance processors. <br>
+   2️⃣ Compute Optimized - High performance processors. <br>
                            ex. (AI, gaming)	c5.2xlarge, c6g.large <br>
 
-   iii. Memory Optimized - Memory optimized instances are designed to deliver fast performance. <br>
+   3️⃣ Memory Optimized - Memory optimized instances are designed to deliver fast performance. <br>
                            ex. r5.large, x1e.32xlarge <br>
 
-   iv. Storage Optimized - Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage <br>
+   4️⃣ Storage Optimized - Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage <br>
                            ex. i3.large, d2.xlarge <br>
 
-   v. Accelerated Computing - Accelerated computing instances use hardware accelerators, or co-processors, to perform functions.<br>
+   5️⃣ Accelerated Computing - Accelerated computing instances use hardware accelerators, or co-processors, to perform functions.<br>
 
-   vi. HPC Optimized - High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. <br>
+   6️⃣ HPC Optimized - High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. <br>
+
 
 
    **Launch Templates :** <br>
@@ -126,6 +128,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
    ✅ Storage (EBS volumes) <br>
    ✅ User data scripts (to run commands on startup) <br>
   Launch Templates simplify EC2 deployment, improve consistency, and support Auto Scaling & Spot Instances. <br>
+
 
 
   **EC2 Purchasing Models :** <br>
@@ -169,6 +172,12 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
       ✅ Workloads that need single-tenant EC2 instances <br>
       ✅ Not as strict as Dedicated Hosts but still private <br>
       🔹 Example: A finance company requiring high security but not full physical control. <br>
+
+   7️⃣ Capacity Reservations - 💰 Pricing: Pay On-Demand rates but guarantee EC2 capacity in a specific region.
+      📌 Best For: <br>
+      ✅ Mission-critical applications that must always run <br>
+      ✅ When you need guaranteed instances in a busy AWS region <br>
+      🔹 Example: E-commerce sites preparing for Black Friday traffic. <br>
 
 
   
