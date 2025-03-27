@@ -121,9 +121,10 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 
-**Launch Templates :** <br>
+*3. Launch Templates :* <br>
    **What is a Launch Template?** <br>
-   A Launch Template in AWS is a pre-configured blueprint for launching EC2 instances. It helps automate and standardize EC2 instance launches by defining key parameters like: <br>
+    A Launch Template in AWS is a pre-configured blueprint for launching EC2 instances. It helps automate and standardize EC2 instance launches by defining key parameters like: <br>
+    Used to launch EC2 instances with specific settings <br>
    ✅ AMI (Amazon Machine Image) <br>
    ✅ Instance type (e.g., t3.micro, m5.large) <br>
    ✅ Security groups & IAM roles <br>
@@ -133,7 +134,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 
-**EC2 Purchasing Models :** <br>
+*4. EC2 Purchasing Models :* <br>
   1️⃣ On-Demand Instances (Pay-as-You-Go) - 💰 Pricing: Charged per second/minute with no long-term commitment. <br>
       📌 Best For: <br>
       ✅ Short-term, unpredictable workloads <br>
@@ -182,10 +183,18 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
       🔹 Example: E-commerce sites preparing for Black Friday traffic. <br>
 
 
-Amazon Machine Images (AMIs) 
+*5. Amazon Machine Images (AMIs) :* <br>
+  *What is an AMI?* <br>
+  An Amazon Machine Image (AMI) Used to create instances with pre-installed OS & apps <br>
+  It contains: <br>
+  ✅ Operating System (OS) – Linux, Windows, macOS <br>
+  ✅ Software Packages – Web servers, databases, applications <br>
+  ✅ Configurations – Security settings, environment variables <br>
+  ✅ EBS Snapshots – Root volume and optional additional storage <br>
+  💡 Think of an AMI as a "golden image" that defines how your EC2 instance will be set up! <br>
   
 
-
+*6. Elastic Block Store :* <br>
 
 
 
