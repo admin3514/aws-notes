@@ -1,19 +1,19 @@
 # aws-notes
 
-**What is Cloud Computing?** 
+**What is Cloud Computing?** <br>
 The Cloud (or Cloud Computing) refers to the delivery of computing services over the internet. Instead of owning and managing physical hardware, companies and individuals can access on-demand computing resources from cloud providers like AWS, Google Cloud, and Microsoft Azure.
 
-**Types of Cloud Computing**
-*1.Public Cloud* – Services provided over the internet (e.g., AWS, Azure, Google Cloud).
-*2.Private Cloud* – Dedicated cloud infrastructure for a single organization.
-*3.Hybrid Cloud* – A mix of public and private cloud services.
+**Types of Cloud Computing** <br>
+*1.Public Cloud* – Services provided over the internet (e.g., AWS, Azure, Google Cloud). <br>
+*2.Private Cloud* – Dedicated cloud infrastructure for a single organization. <br>
+*3.Hybrid Cloud* – A mix of public and private cloud services. <br>
 
-**Cloud Computing Service Models**
+**Cloud Computing Service Models** <br>
 
-*Region:* In AWS (Amazon Web Services), a Region is a geographical area where AWS has multiple data centers (called Availability Zones) that host cloud resources and services.
-ex. ap-south-1, us-east-1, us-east-2
+*Region:* In AWS (Amazon Web Services), a Region is a geographical area where AWS has multiple data centers (called Availability Zones) that host cloud resources and services. <br>
+ex. ap-south-1, us-east-1, us-east-2 <br>
 
-*Availability Zone (AZ):* An Availability Zone (AZ) is a physically separate data center within an AWS Region. Each region has at least two AZs, and they are designed to be isolated from failures in other AZs.
+*Availability Zone (AZ):* An Availability Zone (AZ) is a physically separate data center within an AWS Region. Each region has at least two AZs, and they are designed to be isolated from failures in other AZs. <br>
 
 
 
