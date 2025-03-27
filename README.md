@@ -106,21 +106,72 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
    ii. Compute Optimized - High performance processors. <br>
                            ex. (AI, gaming)	c5.2xlarge, c6g.large <br>
 
-   iii. Memory Optimized - Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.	<br>
+   iii. Memory Optimized - Memory optimized instances are designed to deliver fast performance. <br>
                            ex. r5.large, x1e.32xlarge <br>
 
    iv. Storage Optimized - Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage <br>
                            ex. i3.large, d2.xlarge <br>
 
-   v. Accelerated Computing - Accelerated computing instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern 
-      matching, more efficiently than is possible in software running on CPUs. <br>
+   v. Accelerated Computing - Accelerated computing instances use hardware accelerators, or co-processors, to perform functions.<br>
 
-   vi. HPC Optimized - High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. HPC instances are ideal for applications that 
-       benefit from high-performance processors such as large, complex simulations and deep learning workloads. <br>
+   vi. HPC Optimized - High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. <br>
 
-   
 
- 
+   **Launch Templates :** <br>
+   **What is a Launch Template?** <br>
+   A Launch Template in AWS is a pre-configured blueprint for launching EC2 instances. It helps automate and standardize EC2 instance launches by defining key parameters like: <br>
+   ✅ AMI (Amazon Machine Image) <br>
+   ✅ Instance type (e.g., t3.micro, m5.large) <br>
+   ✅ Security groups & IAM roles <br>
+   ✅ Storage (EBS volumes) <br>
+   ✅ User data scripts (to run commands on startup) <br>
+  Launch Templates simplify EC2 deployment, improve consistency, and support Auto Scaling & Spot Instances. <br>
+
+
+  **EC2 Purchasing Models :** <br>
+  1️⃣ On-Demand Instances (Pay-as-You-Go) - 💰 Pricing: Charged per second/minute with no long-term commitment. <br>
+      📌 Best For: <br>
+      ✅ Short-term, unpredictable workloads <br>
+      ✅ Applications that require high flexibility <br>
+      ✅ Development and testing environments <br>
+     🔹 Example: Running a web app for a few hours without long-term commitment. <br>
+
+  2️⃣ Reserved Instances (RIs) – Up to 75% Discount - 💰 Pricing: Prepaid commitment for 1 or 3 years → Huge savings! <br>
+      📌 Best For: <br>
+      ✅ Long-running, predictable workloads <br>
+      ✅ Applications requiring steady usage <br>
+      ✅ Big cost savings over time <br>
+     🔹 Example: Running a database server 24/7 for a year → Reserved Instances save money! <br>
+
+  3️⃣ Savings Plans (Flexible Cost Savings) - 💰 Pricing: Similar to RIs but more flexible → Save up to 72%
+     📌 Best For: <br>
+     ✅ Long-term workloads but with some flexibility <br>
+     ✅ Workloads that might change over time <br>
+     ✅ Works across all AWS regions <br>
+     🔹 Example: If your app may change instance types, Savings Plans are better than RIs. <br>
+
+  4️⃣ Spot Instances (Up to 90% Discount!) - 💰 Pricing: Lowest cost option, but instances can be interrupted.
+     📌 Best For: <br>
+     ✅ Batch processing, machine learning, big data, CI/CD <br>
+     ✅ Applications that can handle interruptions <br>
+     ✅ Highly cost-sensitive workloads <br>
+     🔹 Example: Running AI training models at a fraction of the cost. <br>
+
+  5️⃣ Dedicated Hosts (Physical Server for You Only) - 💰 Pricing: Expensive but required for compliance & licensing.
+     📌 Best For: <br>
+     ✅ Running legacy apps that require a physical server <br>
+     ✅ BYOL (Bring Your Own License) for software like Windows Server <br>
+     ✅ Meeting compliance needs (e.g., HIPAA, GDPR) <br>
+     🔹 Example: A company running Windows Server with its own licenses. <br>
+
+   6️⃣ Dedicated Instances (Private EC2 Instances) - 💰 Pricing: More costly than On-Demand, but cheaper than Dedicated Hosts.
+      📌 Best For: <br>
+      ✅ Workloads that need single-tenant EC2 instances <br>
+      ✅ Not as strict as Dedicated Hosts but still private <br>
+      🔹 Example: A finance company requiring high security but not full physical control. <br>
+
+
+  
 
 
 
