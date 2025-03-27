@@ -1,6 +1,6 @@
 # aws-notes
 
-**What is Cloud Computing?**
+**What is Cloud Computing?** 
 The Cloud (or Cloud Computing) refers to the delivery of computing services over the internet. Instead of owning and managing physical hardware, companies and individuals can access on-demand computing resources from cloud providers like AWS, Google Cloud, and Microsoft Azure.
 
 **Types of Cloud Computing**
