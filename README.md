@@ -232,7 +232,7 @@ Protocol (e.g., TCP, UDP, ICMP) <br>
 Port range (e.g., 22 for SSH, 80 for HTTP) <br> 
 Source/Destination (e.g., IP addresses, CIDR blocks, or other security groups) <br>
 
-**Elastic IPs** <br>
+**What is an Elastic IP in EC2?** <br>
 An Elastic IP (EIP) in Amazon EC2 (Elastic Compute Cloud) is a static, public IPv4 address that you can allocate to your AWS account and associate with an EC2 instance, network interface, or NAT gateway. <br>
 Elastic IPs allow you to maintain a consistent public IP address even if you stop and restart an instance or encounter a failure — which makes them useful for services requiring high availability and consistent network endpoints.  <br>
 
@@ -241,10 +241,90 @@ A Key Pair in Amazon EC2 (Elastic Compute Cloud) is a set of two cryptographic k
  1. Public Key → Stored on the EC2 instance (AWS-managed). <br>
  2. Private Key → Stored on your local machine (user-managed). <br>
 
-The public key is embedded into the instance when you launch it. You use the private key to authenticate and securely connect to the instance using SSH (Secure Shell) or RDP (Remote Desktop Protocol) for Windows instances.
+The public key is embedded into the instance when you launch it. You use the private key to authenticate and securely connect to the instance using SSH (Secure Shell) or RDP (Remote Desktop Protocol) for Windows instances. <br>
+
+**Network Interfaces** <br>
+An Elastic Network Interface (ENI) in Amazon EC2 is a virtual network interface that attaches to an EC2 instance to enable communication within a Virtual Private Cloud (VPC) and to the internet. <br>
+A network interface essentially acts as a virtual network card that allows an EC2 instance to: <br>
+ - Communicate with other instances.  <br>
+ - Connect to the internet or private networks. <br>
+ - Receive or send data using private and public IP addresses. <br>
+
+🏆 *Why Use Network Interfaces?* <br>
+✅ Provides network-level flexibility for EC2 instances. <br>
+✅ Enables assigning multiple IP addresses to a single instance. <br>
+✅ Supports network-level failover by moving the ENI between instances. <br>
+✅ Allows instances to communicate privately within a VPC. <br>
+✅ Can create and configure ENIs independently from instances. <br>
+
+**What is Load Balancing in AWS?** <br>
+Load Balancing is the process of distributing incoming network traffic across multiple servers (or EC2 instances) to: <br>
+✅ Improve performance and availability. <br>
+✅ Ensure high availability by routing traffic to healthy instances. <br>
+✅ Scale infrastructure automatically during peak loads. <br>
+✅ Prevent server overload and improve response times. <br>
+ 
+In AWS, Elastic Load Balancer (ELB) is the managed service used for load balancing across EC2 instances, containers, and IP addresses within a VPC (Virtual Private Cloud). <br>
+
+*Types of AWS Load Balancers*                         best for <br>
+ 1. Classic Load Balancer (CLB) (Legacy) ----> Simple HTTP, HTTPS, TCP traffic  <br>
+ 2. Application Load Balancer (ALB) ----> HTTP/HTTPS traffic  <br>
+ 3. Network Load Balancer (NLB) ----> High-performance TCP/UDP traffic  <br>
+ 4. Gateway Load Balancer (GWLB) ----> Security and network appliances  <br>
+
+**What are Target Groups in EC2?** <br>
+A Target Group is a logical grouping of EC2 instances, IP addresses, or AWS Lambda functions that an Elastic Load Balancer (ELB) routes traffic to. <br>
+
+When you create a Load Balancer (ALB, NLB, or GLB), you need to specify one or more Target Groups that the Load Balancer will use to forward traffic. The Load Balancer will distribute incoming traffic to the registered targets in the target group based on the configured routing rules. <br>
+
+**What is Auto Scaling in AWS?** <br>
+AWS Auto Scaling is a service that automatically adjusts the number of EC2 instances based on traffic demand. It helps maintain application availability, performance, and cost efficiency by adding or removing instances as needed.  <br>
+
+🔹 Think of Auto Scaling as a system that ensures you always have just the right number of instances running – not too many (to save cost) and not too few (to maintain performance).  <br>
+
+*Key Benefits of Auto Scaling* <br>
+✅ High Availability – Keeps applications running smoothly by replacing failed instances.  <br>
+✅ Scalability – Automatically increases/decreases instances based on load.  <br>
+✅ Cost Optimization – Reduces unused resources, saving money.  <br>
+✅ Fault Tolerance – Replaces unhealthy instances with new ones. <br>
+✅ Elasticity – Handles traffic spikes without manual intervention. <br>
 
 
+1️⃣ Vertical Scaling (Scaling Up/Down) <br>
+🚀 Increasing or decreasing the power of a single instance. <br>
+ - Upgrading an EC2 instance to a more powerful type (e.g., t3.micro → m5.large). <br>
+ - Adding more CPU, RAM, or disk space to a single machine. <br>
+ - No change in the number of instances, only instance size. <br>
+
+🔹 Best for: <br>
+ ✅ Applications that cannot be distributed (e.g., databases like RDS, single-instance apps). <br>
+ ✅ Quick performance boost without adding more instances. <br>
+ 
+📌 Example: <br>
+ - Upgrading an RDS database from db.t3.medium → db.r5.large to handle more queries. <br>
+ - Increasing an EC2 instance’s RAM from 8GB to 16GB for better processing. <br>
+
+⚠️ Limitations: <br>
+ - There is a hardware limit (you can’t scale infinitely). <br>
+ - Scaling requires a temporary downtime when upgrading. <br>
 
 
+2️⃣ Horizontal Scaling (Scaling Out/In) <br>
+🚀 Adding or removing multiple instances to handle traffic changes. <br>
+ - Instead of upgrading a single server, add more servers (instances). <br>
+ - Works well with Auto Scaling Groups (ASG) & Load Balancers. <br>
+ - No downtime since traffic is distributed among instances. <br>
+
+🔹 Best for: <br>
+ ✅ Web apps, APIs, containerized applications (ECS, Kubernetes). <br>
+ ✅ Handling high traffic loads dynamically. <br>
+
+📌 Example: <br>
+ - A website running on 3 EC2 instances scales up to 10 instances when traffic increases. <br>
+ - A load balancer distributes incoming requests across multiple servers. <br>
+
+⚠️ Limitations: <br>
+ - Requires applications to be stateless or distributed (e.g., microservices). <br>
+ - Managing multiple instances can be more complex. <br>
 
 
