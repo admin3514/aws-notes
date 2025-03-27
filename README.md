@@ -28,7 +28,7 @@ ex. ap-south-1, us-east-1, us-east-2 <br>
 **AWS IAM (Identity and Access Management) :** <br>
 AWS IAM (Identity and Access Management) is a service that helps you securely control access to AWS resources. It allows you to manage who can access AWS (authentication) and what actions they can perform (authorization). <br>
 
-IAM is a global service, meaning that it is not tied to a specific AWS region. <br>
+✅ IAM is a global service, meaning that it is not tied to a specific AWS region. <br>
 
 **IAM Resources & Components :** <br>
 *1. IAM Users* - Represents individual people or applications that need access to AWS. <br>
@@ -51,7 +51,9 @@ Used by EC2 instances, Lambda functions, or cross-account access.
 
 **Amazon S3 (Simple Storage Service) :** <br>
 **What is Amazon S3?** <br>
-Amazon S3 (Simple Storage Service) is an object storage service that allows you to store and retrieve any amount of data from anywhere on the internet. It is highly scalable, durable, and secure, making it ideal for backups, static website hosting, data lakes, and more.
+Amazon S3 (Simple Storage Service) is an object storage service that allows you to store and retrieve any amount of data from anywhere on the internet. It is highly scalable, durable, and secure, making it ideal for backups, static website hosting, data lakes, and more. <br>
+
+✅ Amazon S3 is a region specific service. <br>
 
 *Key Features of S3* <br>
 ✅ Unlimited Storage – Store petabytes of data. <br>
@@ -62,14 +64,65 @@ Amazon S3 (Simple Storage Service) is an object storage service that allows you 
 ✅ Static Website Hosting – Serve web content without a web server. <br>
 
 *S3 Resources & Components* <br>
-1. S3 Buckets - A bucket is a container for storing objects (files). <br>
+*1. S3 Buckets* - A bucket is a container for storing objects (files). <br>
    Each bucket has a unique name across globally. <br>
 
-2. S3 Objects - Objects are the actual data files stored inside a bucket. <br>
+*2. S3 Objects* - Objects are the actual data files stored inside a bucket. <br>
    Each object consists of: <br>
    Data (the actual file) <br>
    Metadata (key-value pairs) <br>
    Key (the unique name of the object in the bucket) <br>
+
+*3. S3 Storage Classes* - AWS S3 provides different storage classes to optimize cost vs. access frequency. <br>
+   i. S3 Standard -	Frequently accessed data <br>
+   ii. S3 Intelligent-Tiering -	Automatically moves objects to cheaper storage tiers based on usage <br>
+   iii. S3 Standard-IA (Infrequent Access) - Data that is accessed less often but needs fast retrieval <br>
+   iv. S3 One Zone-IA	- Lower-cost infrequent access storage in a single AZ <br>
+   v. S3 Glacier - Long-term cold storage (retrieval takes minutes to hours) <br>
+   vi. S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
+
+   <hr>
+
+**Amazon EC2 (Elastic Compute Cloud) :** <br>
+**What is Amazon EC2?** <br>
+Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers  in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br>
+
+*Key Features of EC2 :* <br>
+✅ Elasticity – Scale instances up or down as needed. <br>
+✅ Variety of Instance Types – Choose instances optimized for compute, memory, or storage. <br>
+✅ Pay-as-You-Go Pricing – Only pay for what you use. <br>
+✅ Security & Control – Secure instances using IAM roles, security groups, and VPCs. <br>
+✅ Multiple OS Choices – Run Linux, Windows, or custom AMIs. <br>
+
+*EC2 Resources & Components* <br>
+*1. EC2 Instances (Virtual Servers)* - An EC2 instance is a virtual machine (VM) running on AWS. <br>
+    Instances have CPU, RAM, storage, and networking. <br>
+    We can choose an AMI (Amazon Machine Image) to preinstall software. <br>
+
+*2. Instance Types* : <br>
+    i. General Purpose - General purpose instances provide a balance of compute, memory and networking resources, and can be used for a variety of diverse workloads.	<br>
+                         ex. t3.micro, m5.large <br>
+
+   ii. Compute Optimized - High performance processors. <br>
+                           ex. (AI, gaming)	c5.2xlarge, c6g.large <br>
+
+   iii. Memory Optimized - Memory optimized instances are designed to deliver fast performance for workloads that process large data sets in memory.	<br>
+                           ex. r5.large, x1e.32xlarge <br>
+
+   iv. Storage Optimized - Storage optimized instances are designed for workloads that require high, sequential read and write access to very large data sets on local storage <br>
+                           ex. i3.large, d2.xlarge <br>
+
+   v. Accelerated Computing - Accelerated computing instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern 
+      matching, more efficiently than is possible in software running on CPUs. <br>
+
+   vi. HPC Optimized - High performance computing (HPC) instances are purpose built to offer the best price performance for running HPC workloads at scale on AWS. HPC instances are ideal for applications that 
+       benefit from high-performance processors such as large, complex simulations and deep learning workloads. <br>
+
+   
+
+ 
+
+
 
 
 
