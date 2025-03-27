@@ -29,14 +29,14 @@ ex. ap-south-1, us-east-1, us-east-2 <br>
 AWS IAM (Identity and Access Management) is a service that helps you securely control access to AWS resources. It allows you to manage who can access AWS (authentication) and what actions they can perform (authorization).
 
 **IAM Resources & Components :** <br>
-*1. IAM Users* - Represents individual people or applications that need access to AWS. <br>
+*1. IAM Users* - Represents individual people or applications that need access to AWS.
 Each user has credentials (passwords, access keys). <br>
 
 *2. IAM Groups* - A collection of IAM users that share the same permissions. <br>
-Easier to manage multiple users at once. <br>
+Easier to manage multiple users at once.
 
 *3. IAM Roles* - Temporary access credentials assigned to AWS services or users. <br>
-Used by EC2 instances, Lambda functions, or cross-account access. <br>
+Used by EC2 instances, Lambda functions, or cross-account access.
 
 *4. IAM Policies* - JSON documents that define permissions. <br>
 **Two types:** <br>
