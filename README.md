@@ -195,6 +195,53 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
   
 
 *6. Elastic Block Store :* <br>
+**What is Amazon Elastic Block Store (EBS)?**
+Amazon Elastic Block Store (EBS) is a high-performance block storage service for EC2 instances. It works like a virtual hard drive that provides persistent storage. Even if the EC2 instance stops or terminates, the data in an EBS volume remains intact. <br>
+🔹 Think of EBS as an external SSD attached to your EC2 instance. <br>
+
+Key Features of EBS <br>
+✅ Persistent Storage – Data remains even after stopping an EC2 instance. <br>
+✅ Scalability – Easily increase storage size without downtime. <br>
+✅ High Performance – Optimized for low-latency access. <br>
+✅ Multiple Volume Types – Different types for different workloads (SSD, HDD). <br>
+✅ Encryption – Supports encryption for security. <br>
+✅ Snapshots – Back up EBS volumes to Amazon S3. <br>
+
+Types of EBS Volumes <br>
+i. gp3 (General Purpose SSD) --> Next-gen SSD, lower cost, high performance --> Most workloads (web servers, databases) <br>
+ii. gp2 (General Purpose SSD) --> Legacy SSD, burstable performance --> Default for general workloads <br>
+iii. io2/io1 (Provisioned IOPS SSD) --> High-performance, low-latency --> Databases, transactional apps <br>
+iv. st1 (Throughput Optimized HDD) --> Optimized for sequential workloads --> Big data, log processing <br>
+v. sc1 (Cold HDD) --> Lowest cost, infrequent access --> Archival storage <br>
+🔹 SSD-based EBS (gp3, io2) is best for high-speed access. <br>
+🔹 HDD-based EBS (st1, sc1) is best for large, sequential reads/writes. <br>
+
+**Snapshots** <br>
+In AWS EC2, a snapshot is a point-in-time backup of an EBS (Elastic Block Store) volume. Snapshots capture the current state of the EBS volume, including all its data, and store it in Amazon S3 (managed internally by AWS). <br>
+
+**Lifecycle Manager** <br>
+Amazon Data Lifecycle Manager (DLM) is a service that automates the creation, retention, and deletion of EBS snapshots and AMI (Amazon Machine Images) based on defined policies. It helps you manage the lifecycle of your EBS volumes and AMIs, ensuring that backups are created and removed automatically to reduce costs and improve data protection. <br>
+
+**Network & Security** <br>
+In Amazon EC2 (Elastic Compute Cloud), networking and security are critical components that ensure instances can communicate securely and efficiently within AWS and with external systems. AWS provides a range of networking features and security tools to manage traffic flow, protect data, and control access. <br>
+
+**Security Group** <br>
+A Security Group in Amazon EC2 (Elastic Compute Cloud) acts as a virtual firewall that controls inbound and outbound traffic for one or more EC2 instances. Security Groups enable you to define rules that allow or deny specific types of network traffic <br>
+based on: <br>
+Protocol (e.g., TCP, UDP, ICMP) <br>
+Port range (e.g., 22 for SSH, 80 for HTTP) <br> 
+Source/Destination (e.g., IP addresses, CIDR blocks, or other security groups) <br>
+
+**Elastic IPs** <br>
+An Elastic IP (EIP) in Amazon EC2 (Elastic Compute Cloud) is a static, public IPv4 address that you can allocate to your AWS account and associate with an EC2 instance, network interface, or NAT gateway. <br>
+Elastic IPs allow you to maintain a consistent public IP address even if you stop and restart an instance or encounter a failure — which makes them useful for services requiring high availability and consistent network endpoints.  <br>
+
+🔑 **What is a Key Pair in EC2?** <br>
+A Key Pair in Amazon EC2 (Elastic Compute Cloud) is a set of two cryptographic keys used for secure login to EC2 instances: <br>
+ 1. Public Key → Stored on the EC2 instance (AWS-managed). <br>
+ 2. Private Key → Stored on your local machine (user-managed). <br>
+
+The public key is embedded into the instance when you launch it. You use the private key to authenticate and securely connect to the instance using SSH (Secure Shell) or RDP (Remote Desktop Protocol) for Windows instances.
 
 
 
