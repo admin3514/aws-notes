@@ -24,6 +24,7 @@ ex. ap-south-1, us-east-1, us-east-2 <br>
 *Availability Zone (AZ):* An Availability Zone (AZ) is a physically separate data center within an AWS Region. Each region has at least two AZs, and they are designed to be isolated from failures in other AZs. <br>
 
 -----------------------------------------------------------------------------------------
+<hr>
 
 
 
