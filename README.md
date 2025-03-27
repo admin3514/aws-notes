@@ -87,6 +87,8 @@ Amazon S3 (Simple Storage Service) is an object storage service that allows you 
 **What is Amazon EC2?** <br>
 Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers  in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br>
 
+✅ Amazon EC2 is Region-Specific Service<br>
+
 *Key Features of EC2 :* <br>
 ✅ Elasticity – Scale instances up or down as needed. <br>
 ✅ Variety of Instance Types – Choose instances optimized for compute, memory, or storage. <br>
@@ -119,7 +121,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 
-   **Launch Templates :** <br>
+**Launch Templates :** <br>
    **What is a Launch Template?** <br>
    A Launch Template in AWS is a pre-configured blueprint for launching EC2 instances. It helps automate and standardize EC2 instance launches by defining key parameters like: <br>
    ✅ AMI (Amazon Machine Image) <br>
@@ -131,7 +133,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 
-  **EC2 Purchasing Models :** <br>
+**EC2 Purchasing Models :** <br>
   1️⃣ On-Demand Instances (Pay-as-You-Go) - 💰 Pricing: Charged per second/minute with no long-term commitment. <br>
       📌 Best For: <br>
       ✅ Short-term, unpredictable workloads <br>
@@ -146,40 +148,41 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
       ✅ Big cost savings over time <br>
      🔹 Example: Running a database server 24/7 for a year → Reserved Instances save money! <br>
 
-  3️⃣ Savings Plans (Flexible Cost Savings) - 💰 Pricing: Similar to RIs but more flexible → Save up to 72%
+  3️⃣ Savings Plans (Flexible Cost Savings) - 💰 Pricing: Similar to RIs but more flexible → Save up to 72% <br>
      📌 Best For: <br>
      ✅ Long-term workloads but with some flexibility <br>
      ✅ Workloads that might change over time <br>
      ✅ Works across all AWS regions <br>
      🔹 Example: If your app may change instance types, Savings Plans are better than RIs. <br>
 
-  4️⃣ Spot Instances (Up to 90% Discount!) - 💰 Pricing: Lowest cost option, but instances can be interrupted.
+  4️⃣ Spot Instances (Up to 90% Discount!) - 💰 Pricing: Lowest cost option, but instances can be interrupted. <br>
      📌 Best For: <br>
      ✅ Batch processing, machine learning, big data, CI/CD <br>
      ✅ Applications that can handle interruptions <br>
      ✅ Highly cost-sensitive workloads <br>
      🔹 Example: Running AI training models at a fraction of the cost. <br>
 
-  5️⃣ Dedicated Hosts (Physical Server for You Only) - 💰 Pricing: Expensive but required for compliance & licensing.
+  5️⃣ Dedicated Hosts (Physical Server for You Only) - 💰 Pricing: Expensive but required for compliance & licensing. <br>
      📌 Best For: <br>
      ✅ Running legacy apps that require a physical server <br>
      ✅ BYOL (Bring Your Own License) for software like Windows Server <br>
      ✅ Meeting compliance needs (e.g., HIPAA, GDPR) <br>
      🔹 Example: A company running Windows Server with its own licenses. <br>
 
-   6️⃣ Dedicated Instances (Private EC2 Instances) - 💰 Pricing: More costly than On-Demand, but cheaper than Dedicated Hosts.
+   6️⃣ Dedicated Instances (Private EC2 Instances) - 💰 Pricing: More costly than On-Demand, but cheaper than Dedicated Hosts. <br>
       📌 Best For: <br>
       ✅ Workloads that need single-tenant EC2 instances <br>
       ✅ Not as strict as Dedicated Hosts but still private <br>
       🔹 Example: A finance company requiring high security but not full physical control. <br>
 
-   7️⃣ Capacity Reservations - 💰 Pricing: Pay On-Demand rates but guarantee EC2 capacity in a specific region.
+   7️⃣ Capacity Reservations - 💰 Pricing: Pay On-Demand rates but guarantee EC2 capacity in a specific region. <br>
       📌 Best For: <br>
       ✅ Mission-critical applications that must always run <br>
       ✅ When you need guaranteed instances in a busy AWS region <br>
       🔹 Example: E-commerce sites preparing for Black Friday traffic. <br>
 
 
+Amazon Machine Images (AMIs) 
   
 
 
