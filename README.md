@@ -357,9 +357,10 @@ like your own data center in the cloud, where you can define networking rules, c
 It allows you to have your own IP address range, subnets, internet gateways, NAT gateways and security groups.  <br>
 
 **Q. What are the Defaults services we get when we create custom AWS VPC?**  <br>
-• Route Table  <br>
-• Network ACL  <br>
-• Security Group  <br>
+
+ - Route Table  <br>
+ - Network ACL  <br>
+ - Security Group  <br>
 
 **Components of VPC ?**
 - CIDR Block (IP Address Range) 
