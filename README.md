@@ -369,7 +369,8 @@ A CIDR block (Classless Inter-Domain Routing block) defines the IP address range
 
 *2. Subnets (Public & Private)*  <br>
 A Subnet (sub-network) is a logical subdivision of an AWS VPC (Virtual Private Cloud).  <br>
-*Two Types of Subnet :*
+
+*Two Types of Subnet :*  <br>
 **1. public subnet** - A public subnet has direct internet access because it is associated with an Internet Gateway (IGW) and has a route to 0.0.0.0/0.  <br>
 **2. Private Subnet** - A private subnet has no direct internet access—it does NOT have a route to an Internet Gateway (IGW).  <br>
 
