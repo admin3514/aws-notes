@@ -62,8 +62,12 @@ Answer: 10 (Soft limit), We can have till 20   <br>
 <hr>
 
 **Amazon S3 (Simple Storage Service) :** <br>
+
 **What is Amazon S3?** <br>
 Amazon S3 (Simple Storage Service) is an object storage service that allows you to store and retrieve any amount of data from anywhere on the internet. It is highly scalable, durable, and secure, making it ideal for backups, static website hosting, data lakes, and more. <br>
+
+**Q. What is the minimum and maximum size of individual objects that you can store in S3**  <br>
+Answer: minimum 0 bytes and the maximum is 5TB.  <br>
 
 ✅ Amazon S3 is a region specific service. <br>
 
@@ -94,6 +98,17 @@ Amazon S3 (Simple Storage Service) is an object storage service that allows you 
     6️⃣ S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
 
    <hr>
+
+**Q. What is the default storage class in S3?**  <br>
+Answer: S3 Standard frequently accessed.  <br>
+
+**Q. What is glacier?**  <br>
+Answer: Glacier is the back up or archival tool that you use to back up your data in S3.  <br>
+
+**Q. How can you secure the access to your S3 bucket?**  <br>
+Answer: There are two ways that you can control the access to your S3 buckets,  <br>
+ • ACL – Access Control List  <br>
+ • Bucket polices   <br>
 
 **Amazon EC2 (Elastic Compute Cloud) :** <br>
 **What is Amazon EC2?** <br>
