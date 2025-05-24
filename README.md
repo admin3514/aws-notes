@@ -347,5 +347,5 @@ AWS Auto Scaling is a service that automatically adjusts the number of EC2 insta
  - A website running on 3 EC2 instances scales up to 10 instances when traffic increases. <br>
  - A load balancer distributes incoming requests across multiple servers. <br>
 
-<br>
-<br>
+<hr>
+<hr>
