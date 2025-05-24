@@ -97,7 +97,7 @@ Answer: minimum 0 bytes and the maximum is 5TB.  <br>
     5️⃣ S3 Glacier - Long-term cold storage (retrieval takes minutes to hours) <br>
     6️⃣ S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
 
-**Q. Explain Amazon s3 lifecycle rules?**
+**Q. Explain Amazon s3 lifecycle rules?**  <br>
 Answer: Amazon S3 lifecycle configuration rules, you can significantly reduce your storage costs by automatically transitioning data from one storage class to another or even automatically delete data after a period of time.  <br>
 • Store backup data initially in Amazon S3 Standard  <br>
 • After 30 days, transition to Amazon Standard IA  <br>
@@ -138,8 +138,9 @@ Answer:100 buckets can be created by default in AWS account.To get more buckets 
  <hr>
 
 **Amazon EC2 (Elastic Compute Cloud) :** <br>
+
 **What is Amazon EC2?** <br>
-Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers  in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br>
+Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br>
 
 ✅ Amazon EC2 is Region-Specific Service<br>
 
@@ -176,6 +177,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 *3. Launch Templates :* <br>
+
    **What is a Launch Template?** <br>
     A Launch Template in AWS is a pre-configured blueprint for launching EC2 instances. It helps automate and standardize EC2 instance launches by defining key parameters like: <br>
     Used to launch EC2 instances with specific settings <br>
@@ -189,6 +191,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 *4. EC2 Purchasing Models :* <br>
+
   1️⃣ On-Demand Instances (Pay-as-You-Go) - 💰 Pricing: Charged per second/minute with no long-term commitment. <br>
       📌 Best For: <br>
       ✅ Short-term, unpredictable workloads <br>
@@ -238,6 +241,7 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
 
 
 *5. Amazon Machine Images (AMIs) :* <br>
+
   *What is an AMI?* <br>
   An Amazon Machine Image (AMI) Used to create instances with pre-installed OS & apps <br>
   It contains: <br>
@@ -249,9 +253,18 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
   
 
 *6. Elastic Block Store :* <br>
+
 **What is Amazon Elastic Block Store (EBS)?**
 Amazon Elastic Block Store (EBS) is a high-performance block storage service for EC2 instances. It works like a virtual hard drive that provides persistent storage. Even if the EC2 instance stops or terminates, the data in an EBS volume remains intact. <br>
 🔹 Think of EBS as an external SSD attached to your EC2 instance. <br>
+
+**Q. What are the types of volumes for EC2 instances?** <br>
+There are two types of volumes,  <br>
+1. Instance store volumes  <br>
+2. EBS – Elastic Block Stores   <br>
+
+**Q. What are EBS volumes?** <br>
+Answer:EBS stands for Elastic Block Stores. They are persistent volumes that you can attach to the instances. With EBS volumes, your data will be preserved even when you stop your instances, unlike your instance store volumes where the data is deleted when you stop the instances.  <br>
 
 Key Features of EBS <br>
 ✅ Persistent Storage – Data remains even after stopping an EC2 instance. <br>
@@ -312,6 +325,7 @@ A network interface essentially acts as a virtual network card that allows an EC
 ✅ Can create and configure ENIs independently from instances. <br>
 
 **What is Load Balancing in AWS?** <br>
+
 Load Balancing is the process of distributing incoming network traffic across multiple servers (or EC2 instances) to: <br>
 ✅ Improve performance and availability. <br>
 ✅ Ensure high availability by routing traffic to healthy instances. <br>
@@ -332,6 +346,7 @@ A Target Group is a logical grouping of EC2 instances, IP addresses, or AWS Lamb
 When you create a Load Balancer (ALB, NLB, or GLB), you need to specify one or more Target Groups that the Load Balancer will use to forward traffic. The Load Balancer will distribute incoming traffic to the registered targets in the target group based on the configured routing rules. <br>
 
 **What is Auto Scaling in AWS?** <br>
+
 AWS Auto Scaling is a service that automatically adjusts the number of EC2 instances based on traffic demand. It helps maintain application availability, performance, and cost efficiency by adding or removing instances as needed.  <br>
 
 🔹 Think of Auto Scaling as a system that ensures you always have just the right number of instances running – not too many (to save cost) and not too few (to maintain performance).  <br>
@@ -349,18 +364,10 @@ AWS Auto Scaling is a service that automatically adjusts the number of EC2 insta
  - Upgrading an EC2 instance to a more powerful type (e.g., t3.micro → m5.large). <br>
  - Adding more CPU, RAM, or disk space to a single machine. <br>
  - No change in the number of instances, only instance size. <br>
-
-🔹 Best for: <br>
- ✅ Applications that cannot be distributed (e.g., databases like RDS, single-instance apps). <br>
- ✅ Quick performance boost without adding more instances. <br>
  
 📌 Example: <br>
  - Upgrading an RDS database from db.t3.medium → db.r5.large to handle more queries. <br>
  - Increasing an EC2 instance’s RAM from 8GB to 16GB for better processing. <br>
-
-⚠️ Limitations: <br>
- - There is a hardware limit (you can’t scale infinitely). <br>
- - Scaling requires a temporary downtime when upgrading. <br>
 
 
 2️⃣ Horizontal Scaling (Scaling Out/In) <br>
@@ -369,16 +376,8 @@ AWS Auto Scaling is a service that automatically adjusts the number of EC2 insta
  - Works well with Auto Scaling Groups (ASG) & Load Balancers. <br>
  - No downtime since traffic is distributed among instances. <br>
 
-🔹 Best for: <br>
- ✅ Web apps, APIs, containerized applications (ECS, Kubernetes). <br>
- ✅ Handling high traffic loads dynamically. <br>
-
 📌 Example: <br>
  - A website running on 3 EC2 instances scales up to 10 instances when traffic increases. <br>
  - A load balancer distributes incoming requests across multiple servers. <br>
-
-⚠️ Limitations: <br>
- - Requires applications to be stateless or distributed (e.g., microservices). <br>
- - Managing multiple instances can be more complex. <br>
 
 
