@@ -97,7 +97,12 @@ Answer: minimum 0 bytes and the maximum is 5TB.  <br>
     5️⃣ S3 Glacier - Long-term cold storage (retrieval takes minutes to hours) <br>
     6️⃣ S3 Glacier Deep Archive - Cheapest option for archival storage (retrieval takes hours) <br>
 
-   <hr>
+**Q. Explain Amazon s3 lifecycle rules?**
+Answer: Amazon S3 lifecycle configuration rules, you can significantly reduce your storage costs by automatically transitioning data from one storage class to another or even automatically delete data after a period of time.  <br>
+• Store backup data initially in Amazon S3 Standard  <br>
+• After 30 days, transition to Amazon Standard IA  <br>
+• After 90 days, transition to Amazon Glacier  <br>
+• After 3 years, delete  <br>
 
 **Q. What is the default storage class in S3?**  <br>
 Answer: S3 Standard frequently accessed.  <br>
@@ -109,6 +114,28 @@ Answer: Glacier is the back up or archival tool that you use to back up your dat
 Answer: There are two ways that you can control the access to your S3 buckets,  <br>
  • ACL – Access Control List  <br>
  • Bucket polices   <br>
+
+**Q. How can you encrypt data in S3?**  <br>
+Answer: You can encrypt the data by using the below methods,  <br>
+ • Server Side Encryption – S3 (AES 256 encryption)  <br>
+ • Server Side Encryption – KMS (Key management Service)  <br>
+ • Server Side Encryption – C (Client Side)  <br>
+
+ **Q. what are the things we need to remember while creating s3 bucket?**  <br>
+ Answer:  <br>
+  • Amazon S3 and Bucket names are  <br>
+  • This means bucket names must be unique across all AWS  <br>
+  • Bucket names can contain upto 63 lowercase letters, numbers, hyphens and  <br>
+  • You can create and use multiple buckets  <br>
+  • You can have upto 100 per account by  <br>
+
+**Q. What is the function of cross region replication in Amazon S3?**  <br>
+Answer: Cross region replication is a feature allows you asynchronously replicate all new objects in the source bucket in one AWS region to a target bucket in another region. To enable cross-region replication, versioning must be turned on for both source and destination buckets. Cross region replication is commonly used to reduce the latency required to access objects in Amazon S3   <br>
+
+**Q. Maximum number of bucket which can be crated in AWS S3.** <br>
+Answer:100 buckets can be created by default in AWS account.To get more buckets additionally you have to request Amazon for that. 
+
+ <hr>
 
 **Amazon EC2 (Elastic Compute Cloud) :** <br>
 **What is Amazon EC2?** <br>
