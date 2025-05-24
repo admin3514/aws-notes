@@ -364,4 +364,7 @@ It allows you to have your own IP address range, subnets, internet gateways, NAT
 - Route Tables
 - Security Groups & NACLs
 
+*1. CIDR Block (IP Address Range):* 
+A CIDR block (Classless Inter-Domain Routing block) defines the IP address range for your VPC (Virtual Private Cloud) and its subnets. It is a method of assigning IP addresses to networks and devices in a compact and efficient way.
+
 
