@@ -386,6 +386,7 @@ we create a NAT gateway in public subnet because NAT Gateway needs internet acce
 *5. Route Tables :*  <br>
 A route table is a set of rules, known as routes, that determine where network traffic from your subnet or gateway is directed. <br>
 It tells AWS where to send traffic based on the destination IP address <br>
+
 🧭 How Routing Works  <br>
 Each route in a route table has:  <br>
  - Destination (e.g., 0.0.0.0/0, 10.0.1.0/24)  <br>
