@@ -405,6 +405,7 @@ NACL: <br>
  - Stateless – you must explicitly allow both inbound and outbound <br>
  - In Security group need provide both Allow and Deny rules <br>
 
+
 **VPC peering :** 
 VPC Peering is a networking connection between two Virtual Private Clouds (VPCs) that enables them to communicate with each other as if they are within the same network.
 
