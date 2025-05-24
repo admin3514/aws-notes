@@ -356,6 +356,11 @@ AWS VPC is a private, isolated network within AWS that allows you to securely ru
 like your own data center in the cloud, where you can define networking rules, control access, and connect to the internet or other networks.  <br>
 It allows you to have your own IP address range, subnets, internet gateways, NAT gateways and security groups.  <br>
 
+**Q. What are the Defaults services we get when we create custom AWS VPC?**  <br>
+• Route Table  <br>
+• Network ACL  <br>
+• Security Group  <br>
+
 **Components of VPC ?**
 - CIDR Block (IP Address Range) 
 - Subnets (Public & Private)
