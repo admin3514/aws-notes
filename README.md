@@ -391,3 +391,16 @@ It tells AWS where to send traffic based on the destination IP address <br>
 Each route in a route table has:  <br>
  - Destination (e.g., 0.0.0.0/0, 10.0.1.0/24)  <br>
  - Target (e.g., local, igw-1234, nat-5678, eni-7890, etc.)  <br>
+
+*6. Security Groups & NACLs :*  <br>
+In AWS, Security Groups and Network ACLs (NACLs) are two key components used to control the inbound and outbound traffic in a Virtual Private Cloud (VPC), but they function differently. <br>
+
+Security Group: <br>
+- We create a security group at instance level  <br>
+- Stateful – return traffic is automatically allowed  <br>
+- In Security group need provide Only Allow rules  <br>
+
+NACL: <br>
+ - We create a NACL at subnet level  <br>
+ - Stateless – you must explicitly allow both inbound and outbound <br>
+ - In Security group need provide both Allow and Deny rules <br>
