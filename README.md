@@ -41,17 +41,22 @@ AWS IAM (Identity and Access Management) is a service that helps you securely co
 Each user has credentials (passwords, access keys). <br>
 
 *2. IAM Groups* - A collection of IAM users that share the same permissions. <br>
-Easier to manage multiple users at once.
+Easier to manage multiple users at once.  <br>
 
 *3. IAM Roles* - Roles are for AWS services, Where we can assign permission of some AWS service to other Service. <br>
-Example – Giving S3 permission to EC2 to access S3 Bucket Contents. 
+Example – Giving S3 permission to EC2 to access S3 Bucket Contents.   <br>
 
-*4. IAM Policies* - JSON documents that define permissions. <br>
+*4. IAM Policies* - Policies are for users and groups, Where we can assign permission to user’s and groups.  <br>
+Example – Giving permission to user to access the S3 Buckets.   <br>
+
 **Two types:** <br>
 1. *AWS Managed Policies* – Predefined by AWS (e.g., AmazonS3FullAccess). <br>
     i. JSON policy <br>
     ii. Visual policy <br>
 2. *Customer Managed Policies* – Custom policies created by users. <br>
+
+**Q. How many Policies can be attached to a role.** <br>
+Answer: 10 (Soft limit), We can have till 20   <br>
 
 <hr>
 
