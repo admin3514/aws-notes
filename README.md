@@ -381,7 +381,7 @@ Internet Gateway are attached to the VPC after creating <br>
 *4. NAT Gateway :*  <br>
 A NAT Gateway (Network Address Translation Gateway) allows instances in a private subnet to access the internet,  <br> 
 but prevents the internet from initiating connections back to those instances. <br>
-we create a NAT gateway in public subnet because A NAT Gateway needs internet access to forward outbound traffic from private instances to the internet.
+we create a NAT gateway in public subnet because NAT Gateway needs internet access to forward outbound traffic from private instances to the internet.
 
 *5. Route Tables :*  <br>
 
