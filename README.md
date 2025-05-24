@@ -364,7 +364,25 @@ It allows you to have your own IP address range, subnets, internet gateways, NAT
 - Route Tables
 - Security Groups & NACLs
 
-*1. CIDR Block (IP Address Range):* 
+*1. CIDR Block (IP Address Range):*  <br>
 A CIDR block (Classless Inter-Domain Routing block) defines the IP address range for your VPC (Virtual Private Cloud) and its subnets. It is a method of assigning IP addresses to networks and devices in a compact and efficient way.
+
+*2. Subnets (Public & Private)*  <br>
+A Subnet (sub-network) is a logical subdivision of an AWS VPC (Virtual Private Cloud).  <br>
+
+**public subnet** - A public subnet has direct internet access because it is associated with an Internet Gateway (IGW) and has a route to 0.0.0.0/0.  <br>
+**Private Subnet** - A private subnet has no direct internet access—it does NOT have a route to an Internet Gateway (IGW).  <br>
+
+*3. Internet Gateway (IGW)*  <br>
+used to enables communication between a Virtual Private Cloud (VPC) and the internet. <br>
+Internet Gateway are attached to the VPC after creating <br>
+
+*4. NAT Gateway*  <br>
+A NAT Gateway (Network Address Translation Gateway) allows instances in a private subnet to access the internet,  <br> 
+but prevents the internet from initiating connections back to those instances. <br>
+we create a NAT gateway in public subnet because A NAT Gateway needs internet access to forward outbound traffic from private instances to the internet.  <br>
+
+*5. Route Tables*  <br>
+
 
 
