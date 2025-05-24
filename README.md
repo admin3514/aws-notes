@@ -3,7 +3,7 @@
 **What is Cloud Computing?** <br>
 The Cloud (or Cloud Computing) refers to the delivery of computing services over the internet. Instead of owning and managing physical hardware, companies and individuals can access on-demand computing resources from cloud providers like AWS, Google Cloud, and Microsoft Azure.  <br>
 
-**Types of Cloud Computing :** <br>
+**Deployment Models in Cloud :** <br>
 *1. Public Cloud* – Services provided over the internet (e.g., AWS, Azure, Google Cloud). <br>
 *2. Private Cloud* – Dedicated cloud infrastructure for a single organization. <br>
 *3. Hybrid Cloud* – A mix of public and private cloud services. <br>
@@ -140,18 +140,19 @@ Answer:100 buckets can be created by default in AWS account.To get more buckets 
 **Amazon EC2 (Elastic Compute Cloud) :** <br>
 
 **What is Amazon EC2?** <br>
-Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br>
+Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br
 
 ✅ Amazon EC2 is Region-Specific Service<br>
 
-*Key Features of EC2 :* <br>
-✅ Elasticity – Scale instances up or down as needed. <br>
-✅ Variety of Instance Types – Choose instances optimized for compute, memory, or storage. <br>
-✅ Pay-as-You-Go Pricing – Only pay for what you use. <br>
-✅ Security & Control – Secure instances using IAM roles, security groups, and VPCs. <br>
-✅ Multiple OS Choices – Run Linux, Windows, or custom AMIs. <br>
+ **Q. How to Addressing AWS EC2 instances?** <br>
+ • Public Domain name system (DNS) name: When you launch an instance AWS creates a DNS name that can be used to access the  <br>
+ • Public IP: A launched instance may also have a public ip address This IP address assigned from the address reserved by AWS and cannot be specified. <br>
+ • Elastic IP: An Elastic IP Address is an address unique on the internet that you reserve independently and associate with Amazon EC2 instance. This IP Address 
+   persists until the customer release it and is not tried to  <br>
+
 
 *EC2 Resources & Components* <br>
+
 *1. EC2 Instances (Virtual Servers)* - An EC2 instance is a virtual machine (VM) running on AWS. <br>
     Instances have CPU, RAM, storage, and networking. <br>
     We can choose an AMI (Amazon Machine Image) to preinstall software. <br>
@@ -189,54 +190,27 @@ Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual s
   Launch Templates simplify EC2 deployment, improve consistency, and support Auto Scaling & Spot Instances. <br>
 
 
-
 *4. EC2 Purchasing Models :* <br>
 
   1️⃣ On-Demand Instances (Pay-as-You-Go) - 💰 Pricing: Charged per second/minute with no long-term commitment. <br>
-      📌 Best For: <br>
-      ✅ Short-term, unpredictable workloads <br>
-      ✅ Applications that require high flexibility <br>
-      ✅ Development and testing environments <br>
      🔹 Example: Running a web app for a few hours without long-term commitment. <br>
 
   2️⃣ Reserved Instances (RIs) – Up to 75% Discount - 💰 Pricing: Prepaid commitment for 1 or 3 years → Huge savings! <br>
-      📌 Best For: <br>
-      ✅ Long-running, predictable workloads <br>
-      ✅ Applications requiring steady usage <br>
-      ✅ Big cost savings over time <br>
      🔹 Example: Running a database server 24/7 for a year → Reserved Instances save money! <br>
 
   3️⃣ Savings Plans (Flexible Cost Savings) - 💰 Pricing: Similar to RIs but more flexible → Save up to 72% <br>
-     📌 Best For: <br>
-     ✅ Long-term workloads but with some flexibility <br>
-     ✅ Workloads that might change over time <br>
-     ✅ Works across all AWS regions <br>
      🔹 Example: If your app may change instance types, Savings Plans are better than RIs. <br>
 
   4️⃣ Spot Instances (Up to 90% Discount!) - 💰 Pricing: Lowest cost option, but instances can be interrupted. <br>
-     📌 Best For: <br>
-     ✅ Batch processing, machine learning, big data, CI/CD <br>
-     ✅ Applications that can handle interruptions <br>
-     ✅ Highly cost-sensitive workloads <br>
      🔹 Example: Running AI training models at a fraction of the cost. <br>
 
   5️⃣ Dedicated Hosts (Physical Server for You Only) - 💰 Pricing: Expensive but required for compliance & licensing. <br>
-     📌 Best For: <br>
-     ✅ Running legacy apps that require a physical server <br>
-     ✅ BYOL (Bring Your Own License) for software like Windows Server <br>
-     ✅ Meeting compliance needs (e.g., HIPAA, GDPR) <br>
      🔹 Example: A company running Windows Server with its own licenses. <br>
 
    6️⃣ Dedicated Instances (Private EC2 Instances) - 💰 Pricing: More costly than On-Demand, but cheaper than Dedicated Hosts. <br>
-      📌 Best For: <br>
-      ✅ Workloads that need single-tenant EC2 instances <br>
-      ✅ Not as strict as Dedicated Hosts but still private <br>
       🔹 Example: A finance company requiring high security but not full physical control. <br>
 
    7️⃣ Capacity Reservations - 💰 Pricing: Pay On-Demand rates but guarantee EC2 capacity in a specific region. <br>
-      📌 Best For: <br>
-      ✅ Mission-critical applications that must always run <br>
-      ✅ When you need guaranteed instances in a busy AWS region <br>
       🔹 Example: E-commerce sites preparing for Black Friday traffic. <br>
 
 
@@ -317,13 +291,6 @@ A network interface essentially acts as a virtual network card that allows an EC
  - Connect to the internet or private networks. <br>
  - Receive or send data using private and public IP addresses. <br>
 
-🏆 *Why Use Network Interfaces?* <br>
-✅ Provides network-level flexibility for EC2 instances. <br>
-✅ Enables assigning multiple IP addresses to a single instance. <br>
-✅ Supports network-level failover by moving the ENI between instances. <br>
-✅ Allows instances to communicate privately within a VPC. <br>
-✅ Can create and configure ENIs independently from instances. <br>
-
 **What is Load Balancing in AWS?** <br>
 
 Load Balancing is the process of distributing incoming network traffic across multiple servers (or EC2 instances) to: <br>
@@ -380,4 +347,5 @@ AWS Auto Scaling is a service that automatically adjusts the number of EC2 insta
  - A website running on 3 EC2 instances scales up to 10 instances when traffic increases. <br>
  - A load balancer distributes incoming requests across multiple servers. <br>
 
-
+<br>
+<br>
