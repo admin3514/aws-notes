@@ -137,9 +137,7 @@ Answer:100 buckets can be created by default in AWS account.To get more buckets 
 
  <hr>
 
-<hr>
 **Amazon EC2 (Elastic Compute Cloud) :** <br>
-<hr>
 
 **What is Amazon EC2?** <br>
 Amazon EC2 (Elastic Compute Cloud) is a service that provides scalable virtual servers in the cloud we called it as Instances. It allows users to launch, manage, and scale computing capacity without the need for physical hardware. <br
