@@ -352,8 +352,8 @@ AWS Auto Scaling is a service that automatically adjusts the number of EC2 insta
 **VPC (Virtual Private Cloud)**
 
 **What is VPC ?** <br>
-AWS VPC (Virtual Private Cloud) is a private, isolated network within AWS that allows you to securely run cloud resources like EC2, RDS, and Lambda.  <br>
-Think of it as your own data center in the cloud, where you can define networking rules, control access, and connect to the internet or other networks.  <br>
+AWS VPC is a private, isolated network within AWS that allows you to securely run cloud resources like EC2, RDS, and Lambda.  <br>
+like your own data center in the cloud, where you can define networking rules, control access, and connect to the internet or other networks.  <br>
 It allows you to have your own IP address range, subnets, internet gateways, NAT gateways and security groups.  <br>
 
 **Components of VPC ?**  <br>
