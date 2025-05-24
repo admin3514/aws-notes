@@ -404,3 +404,12 @@ NACL: <br>
  - We create a NACL at subnet level  <br>
  - Stateless – you must explicitly allow both inbound and outbound <br>
  - In Security group need provide both Allow and Deny rules <br>
+
+**VPC peering :** 
+VPC Peering is a networking connection between two Virtual Private Clouds (VPCs) that enables them to communicate with each other as if they are within the same network.
+
+🧭 How It Works  <br>
+ - Create Peering Connection between VPC A and VPC B.  <br>
+ - Accept the request in the second VPC.  <br>
+ - Update route tables in both VPCs to point traffic to each other's CIDR block via the peering connection.  <br>
+ - Update security groups to allow traffic from the peered VPC’s IP range.  <br>
