@@ -3,23 +3,26 @@
 **What is Cloud Computing?** <br>
 The Cloud (or Cloud Computing) refers to the delivery of computing services over the internet. Instead of owning and managing physical hardware, companies and individuals can access on-demand computing resources from cloud providers like AWS, Google Cloud, and Microsoft Azure.  <br>
 
-**What is AWS?** <br>
-Answer:AWS stands for Amazon Web Services. AWS is a platform that provides on-demand resources for hosting web services, storage, networking, databases and other resources over the internet with a pay-as-you-go pricing. 
-
 **Types of Cloud Computing :** <br>
 *1. Public Cloud* – Services provided over the internet (e.g., AWS, Azure, Google Cloud). <br>
 *2. Private Cloud* – Dedicated cloud infrastructure for a single organization. <br>
 *3. Hybrid Cloud* – A mix of public and private cloud services. <br>
 
 **Cloud Computing Service Models :** <br>
-*IaaS (Infrastructure as a Service)* - Provides virtual servers, storage, and networking <br>
+*IaaS (Infrastructure as a Service)* - IaaS is a cloud service that runs services on “pay-for-what-you-use” basis <br>
                                        ex. AWS EC2, Google Compute Engine <br>
+                                       Users: IT Administrators  <br>
                                        
-*PaaS (Platform as a Service)* -	Provides a managed environment for app development	<br>
+*PaaS (Platform as a Service)* -	PaaS runs cloud platforms and runtime environments to develop, test and manage software	<br>
                                   ex. AWS Elastic Beanstalk, Google App Engine  <br>
+                                  Users: Software Developers  <br>
 
-*SaaS (Software as a Service)* - Delivers software applications over the internet	<br>
-                                ex. Gmail, Dropbox, Office 365 <br>
+*SaaS (Software as a Service)* - :In SaaS, cloud workers host and manage the software application on a pay-as-you-go pricing model 	<br>
+                                  ex. Gmail, Dropbox, Office 365 <br>
+                                  Users: End Customers  <br>
+
+**What is AWS?** <br>
+Answer:AWS stands for Amazon Web Services. AWS is a platform that provides on-demand resources for hosting web services, storage, networking, databases and other resources over the internet with a pay-as-you-go pricing. 
 
 *Region:* In AWS (Amazon Web Services), a Region is a geographical area where AWS has multiple data centers (called Availability Zones) that host cloud resources and services. <br>
 ex. ap-south-1, us-east-1, us-east-2 <br>
@@ -40,8 +43,8 @@ Each user has credentials (passwords, access keys). <br>
 *2. IAM Groups* - A collection of IAM users that share the same permissions. <br>
 Easier to manage multiple users at once.
 
-*3. IAM Roles* - Temporary access credentials assigned to AWS services or users. <br>
-Used by EC2 instances, Lambda functions, or cross-account access.
+*3. IAM Roles* - Roles are for AWS services, Where we can assign permission of some AWS service to other Service. <br>
+Example – Giving S3 permission to EC2 to access S3 Bucket Contents. 
 
 *4. IAM Policies* - JSON documents that define permissions. <br>
 **Two types:** <br>
